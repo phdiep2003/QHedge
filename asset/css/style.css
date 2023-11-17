@@ -27,14 +27,65 @@ header {
 }
 
 /* Navigation styles */
-nav ul {
+.navbar {
     list-style-type: none;
     padding: 0;
+	margin: 0;
+	overflow: 0;
+	top: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	background-color: #212121;
+    position: relative;
+    z-index: 999;
+
 }
 
-nav li {
+.navbar li 
+{
+	display: inline-block;
+	float: left;
     display: inline;
-    margin-right: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	background: #212121;
+}
+
+.navbar li a {
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.active {
+	background-color: #26422A;
+}
+
+/* Style the dropdown menu */
+.navbar ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.navbar ul ul li {
+    display: block;
+	float: inherit;
+}
+
+.navbar li:hover ul {
+    display: inline-block;
+}
+
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li a:hover {
+    background-color: #800020;
 }
 
 nav a, nav a:visited {
@@ -43,7 +94,7 @@ nav a, nav a:visited {
 }
 
 nav a:hover {
-    color: #800020; /* Change text color to Platinum on hover */
+    background-color: #800020; /* Change text color to Platinum on hover */
 }
 
 nav a {
@@ -186,47 +237,4 @@ button {
 .header-center{
     display: flex;
     margin: auto;
-}
-.navbar {
-    background-color: #333;
-    position: relative;
-    z-index: 999;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-background: black;
-}
-
-.navbar li {
-    display: inline-block;
-}
-
-.navbar li a {
-    color: white;
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-}
-
-/* Style the dropdown menu */
-.navbar ul ul {
-    position: absolute;
-    top: 100%;
-    display: none;
-}
-
-.navbar ul ul li {
-    display: block;
-}
-
-.navbar li:hover ul {
-    display: inline-block;
-}
-
-/* Change the background color of dropdown links on hover */
-.navbar ul ul li a:hover {
-    background-color: #fff;
 }
