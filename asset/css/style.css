@@ -74,6 +74,7 @@
     padding: 0;
     background: #212121;
     align-content: center;
+    font-weight: bold;
 }
 
 .navbar li a {
