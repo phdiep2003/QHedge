@@ -1,0 +1,103 @@
+/* Global styles for images */
+/* img {
+    max-width: 100%;
+} */
+
+/* Slider styles */
+.slider-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;  
+    font-size: 1.5em; 
+    /* border: 2px solid #ffffff;  */
+    /* border-radius: 8px; */
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    height: 100%; /* Ensure slides take up the full height of the slider container */
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; /* Ensure child content doesn't overflow */
+    height: 100%; /* Set the height of each slide to 100% */
+}
+
+.slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* White color with 40% opacity */
+    z-index: 1; /* Place it above the background image */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container while maintaining aspect ratio */
+    opacity: 1; /* Set image opacity to 100% */
+    position: relative;
+    z-index: 2; /* Place it above the white overlay */
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #212121; /* Text color for the slide content */
+    z-index: 3; /* Place it above the image and overlay */
+}
+
+.slide-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slide-button {
+    background-color: #dfd4d4; 
+    color: #212121; 
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+/* Slide backgrounds */
+.slides .slide:nth-child(1) {
+    background: url('asset/media/media1.jpg') center/cover no-repeat;
+}
+
+.slides .slide:nth-child(2) {
+    background: url('asset/media/media2.jpg') center/cover no-repeat;
+}
+
+.slides .slide:nth-child(3) {
+    background: url('asset/media/media3.jpg') center/cover no-repeat;
+}
+
+/* Home */
+.text-chunk{
+    margin: 30px;
+}
+
+.message{
+    background-color: #e8e8e8; /* Use Platinum color for the body background */
+    font-family: Arial, sans-serif; /* Specify a font-family */
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.6; /* Adjust line height for readability */
+}
