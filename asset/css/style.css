@@ -1,3 +1,45 @@
+/* Advertisement Styles*/
+@keyframes moveAd {
+	0% {
+        transform: translateX(-100%); /* Start off the screen to the left */
+    }
+    50% {
+        transform: translateX(0); /* Move to the center of the screen */
+    }
+    100% {
+        transform: translateX(100%); /* Move off the screen to the right */
+    }
+}
+
+.advertisement {
+    background-color: #e8e8e8; /* Set a background color */
+    padding: 15px; /* Add padding for spacing */
+	text-align: center; /* Center the content */
+	white-space: nowrap; /* Prevent the text from wrapping */
+    overflow: hidden; /* Hide overflow content */
+    animation: moveAd 15s linear infinite; /* Apply the animation: 4s duration, linear timing, infinite loop */
+}
+
+.advertisement ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.advertisement li {
+    margin-bottom: 10px; /* Add margin between list items */
+}
+
+.advertisement li a {
+    text-decoration: none;
+    color: #212121; /* Set the text color */
+    font-weight: bold; /* Make the text bold */
+}
+
+.advertisement li a:hover {
+    color: #800020; /* Change text color on hover */
+}
+
 /* Header styles */
 .header-left {
     display: flex;
@@ -33,6 +75,7 @@
     padding: 0;
     background: #212121;
     align-content: center;
+	font-weight: bold;
 }
 
 .navbar li a {
@@ -41,7 +84,6 @@
     padding: 30px 70px;
     text-decoration: none;
 }
-
 
 .navbar .active {
 	color: #212121;
@@ -151,29 +193,6 @@ nav a {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-
-.dropdown {
-    display: inline-block;
-    position: relative;
-  }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-    overflow: auto;
-  }
-.dropdown:hover .dropdown-content {
-    display: block;
-  }
-.dropdown-content a {
-    display: block;
-    color: #000000;
-    text-decoration: none;
-  }
-.dropdown-content a:hover {
-    color: #FFFFFF;
-    background-color: #00A4BD;
   }
 
 .centered-image-container {
