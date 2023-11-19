@@ -3,6 +3,7 @@ body {
     margin: 0px;
     font-family: Georgia , sans-serif;
     line-height: 1.6;
+    
 }
 
 header {
@@ -14,12 +15,9 @@ header {
     align-content: center;
 }
 
-/* Section styles */
-section {
-    margin: 30px;
+section{
+    margin: 20px;
 }
-
-
 /* Footer styles */
 footer {
     background: #212121;
@@ -36,6 +34,7 @@ h1 {
 h2 {
     font-family: Arial, sans-serif;
     font-size: 2em;
+    margin: 0 0 0 0;
 }
 
 q {
