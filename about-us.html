@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>QHedge - Your Financial Solution</title>
+    <link rel="stylesheet" href="asset/css/style.css"> 
+    <script src="asset/javascript/slider.js"></script>
+    <link rel="stylesheet" href="asset/css/main.css">
+    <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="shortcut icon" type="image/png" href="asset/media/tab Logo.png">
+</head>
+<body>
+    <div class ="advertisment">
+        <ul>
+            <li><a href="#realestate"> Opportunity to increase your Net Worth: 2024-2028 Real Estate Project </a> </li>
+        </ul>
+    </div>
+    <header>
+        <div class="header-left">
+            <img src="asset/media/horizontal logo.png" alt="TradeX Logo">
+        </div>
+        <div class="header-center">
+            <nav class="navbar">
+                <ul>
+                    <!-- <li><a class="active" href="#home">Home</a></li> -->
+                    <li class = 'navbar-about'>
+                        <a class="active" href="about-us.html">About Us</a>
+                        <ul>
+                            <li><a href="#founders">Our Founders</a> </li>
+                            <li><a href="#employees">Our Employees</a></li>
+                            <li><a href="#mission">Mission and Vision</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#investments">Our Investments</a>
+                        <ul>
+                            <li><a href="#realestate">Real Estate</a> </li>
+                            <li><a href="#stocks">Stocks</a></li>
+                            <li><a href="#sukuk">Sukuk</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#investor">Investor Relations</a>
+                        <ul>
+                            <li><a href="#annual-filing">Annual Filing</a> </li>
+                            <li><a href="#performance">Performance</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <nav class="schedule-meeting">
+                <button class ="meeting-buttom" onclick="openModal()">Schedule a Meeting</button>
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Schedule a Meeting</h2>
+                    <!-- Add your meeting scheduling form here -->
+                    <!-- For simplicity, just a placeholder text area is used -->
+                    <textarea rows="4" cols="50" placeholder="Enter meeting details..."></textarea>
+                    <br>
+                    <button onclick="scheduleMeeting()">Confirm</button>
+                  </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide" style="background-image: url('asset/media/media1.jpg');">
+              <div class="slide-content">
+                <h2>Top 1 Hedge Fund in Qatar</h2>
+                <p>We are proud to hold the position as Qatar's premier Shariah-compliant hedge fund.</p>
+                <button class="meeting-button" onclick="openModal()">Schedule a Meeting</button>
+              </div>
+            </div>
+            
+            <div class="slide" style="background-image: url('asset/media/media3.jpg');">
+                <div class="slide-content">
+                  <h2>The 1st Real Estate Project</h2>
+                  <p>Our New Real Estate Project 2024-2028 expects to yield 35.5% per annum.</p>
+                  <button class="meeting-button" onclick="openModal()">Schedule a Meeting</button>
+                </div>
+              </div>
+          
+            <div class="slide" style="background-image: url('asset/media/media2.jpg');">
+              <div class="slide-content">
+                <h2>Top 1 market performance</h2>
+                <p>We manage over 600 mln QAR Asset Under Management (AUM) with annual growth of 14% since inception.</p>
+                <button class="meeting-button" onclick="openModal()">Schedule a Meeting</button>
+              </div>
+            </div>
+          
+            
+        </div>
+        <div class="slide-buttons">
+          <button class="slide-button" onclick="prevSlide()"><</button>
+          <button class="slide-button" onclick="nextSlide()">></button>
+        </div>
+      </div>
+      <div class = "text-chunk">
+        <h2 class = "message">QHedge is your trusted partner in making the most of your financial endeavors</h2>
+        <p>At QHedge, we take pride in being Qatar's top Islamic hedge fund, managing a substantial Asset Under Management (AUM) totaling 600 million QAR. Our commitment to excellence, innovation, and adherence to Shariah-compliant principles sets us apart in the global financial landscape.
+        </p>
+      </div>
+    <section id="about-us">
+        <h2>About Us</h2>
+        <div class = "text_chunk">
+            <p>
+                Welcome to QHedge – Qatar's Premier Islamic Hedge Fund
+
+At QHedge, we take pride in being Qatar's top Islamic hedge fund, managing a substantial Asset Under Management (AUM) totaling 600 million QAR. Our commitment to excellence, innovation, and adherence to Shariah-compliant principles sets us apart in the global financial landscape.
+            </p>
+        </div>
+    </section>
+
+    <section id="realestate">
+        <h2>The 2024-2028 Real Estate Project</h2>
+        <div class="blocks-container">
+            <div class="realestateblock">
+              <p>Attain a remarkable annual yield of<br><span class="big-number">35.5%</span><br>ensuring a high-return investment.</p>
+            </div>
+            <div class="realestateblock">
+              <p>Realize anticipated profits within a<br><span class="big-number">4-year</span><br>timeframe before liquidate.</p>
+            </div>
+            <div class="realestateblock">
+              <p>Total expected asset capital investment of<br><span class="big-number">500 million QAR</span><br> with a firm commitment.</p>
+            </div>
+        </div>
+        <div class="realestatebutton">
+            <button class="meeting-button" onclick="openModal()">Schedule a Meeting</button>
+        </div>          
+        <p>
+            QHedge's priority is to research on new investment vehicles to increase investors' capital. Our analysts recent market research indicates a substantial volatility in the real estate market and anticipated it to be the next financial phenomenon. In order to penetrate into the market, QHedge are expecting to raise a total of 500 million QAR, expecting a 35.5% return.  
+        </p>
+    </section>
+    
+
+    
+    <section id="stock">
+        <h2>Here are our historical stocks investments</h2>
+        <div class="centered-image-container">
+            <img src="asset/media/Investments.png" alt="TradeX Logo">
+        </div>
+    </section>
+
+    <section id="investor-tools">
+        <h2>About Us</h2>
+        <ul>
+            <li>
+                <h3>Innovative Sharia-Compliance</h3>
+                <p>Pioneering cutting-edge, Sharia-compliant investment strategies.</p>
+            </li>
+            <li>
+                <h3>Client-Centric Culture</h3>
+                <p>Fostering a culture that prioritizes clients' interests with personalized service.</p>
+            </li>
+            <li>
+                <h3>Regional Leadership</h3>
+                <p>Maintaining the top position in Qatar while strategically expanding across the Gulf.</p>
+            </li>
+            <li>
+                <h3>Superior Financial Performance</h3>
+                <p>Consistently delivering superior financial results aligned with client and shareholder expectations.</p>
+            </li>
+            <li>
+                <h3>Unmatched Value Delivery</h3>
+                <p>Striving for excellence through optimized investments, effective risk management, and transparent practices.</p>
+            </li>
+            <li>
+                <h3>Global Perspective</h3>
+                <p>Operating with a multi-national team, providing a global outlook in investment strategies.</p>
+            </li>
+            <li>
+                <h3>Ethical Transparency</h3>
+                <p>Adhering to the highest ethical standards in Islamic finance, ensuring responsible and transparent financial practices.</p>
+            </li>
+        </ul>  
+    </section>
+    <section id="vision-mission-values">
+        <h2>Vision & Mission</h2>
+    
+        <div class="vision-mission-container">
+            <div class="vision-mission-item">
+                <h3>Our Vision</h3>
+                <p>
+                    QHedge aims to uphold our position as Qatar's top Islamic hedge fund, and the world’s next leading Shariah Compliant trust by providing unmatched investing solutions that go above and beyond our respected customers' expectations.
+                </p>
+            </div>
+    
+            <div class="vision-mission-item">
+                <h3>Our Mission</h3>
+                <ul>
+                    <li>Expand Across the Gulf: Extend our operations and influence the asset management industry strategically across the Gulf region.</li>
+                    <li>Customer’s satisfaction: Cultivate a client-centric culture that places the needs and satisfaction of our esteemed clientele at the forefront of our operations.</li>
+                    <li>Employee Dedication: Attract, develop, and retain qualified top-tier industry professionals who are dedicated to delivering excellent client service and innovative investment strategies.</li>
+                    <li>Innovative Sharia-Compliant Strategies: Continue to invest in and leverage state-of-the-art technology solutions, such as Aladdin®, to set industry standards.</li>
+                    <li>Ethical and Transparent Practices: Uphold the highest ethical standards of Islamic finance, avoiding speculative practices and excessive uncertainty.</li>
+                    <li>Commitment to Charitable Causes: Dedicate a portion of profits to charitable endeavors and community welfare in line with Islamic finance's principles.</li>
+                    <li>Adaptability and Growth: Navigate market dynamics and economic uncertainties while seeking opportunities for growth and excellence.</li>
+                    <li>Global Macro Strategy: Build investments around a global macro strategy, considering economic, social, and technological trends.</li>
+                    <li>Focus on Fundamental Value: Concentrate on fundamental value investments over momentum, always monitor and update investment strategies but adhering to a strict investment discipline.</li>
+                </ul>
+            </div>
+    
+            <div class="vision-mission-item">
+                <h3>Values</h3>
+                <ul>
+                    <li>Trust: We prioritize trust earned from all stakeholders.</li>
+                    <li>Ethical Leadership: We adhere to the highest ethical standards, prioritize client interests, and promote ethical leadership for our fund's success while ensuring Shariah compliance.</li>
+                    <li>Diligence: We execute tasks with undivided attention to detail and precision.</li>
+                    <li>Risk Management: We rigorously manage risks to safeguard clients' capital and investments, all within the bounds of Shariah compliance.</li>
+                    <li>Client-Centric Sustainability: Our focus is on tailoring services to our clients' financial goals, aligning prosperity with Shariah principles, and contributing to Qatar's long-term economic development and stability.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="services">
+        <h2>Services</h2>
+        <q> QHedge is your trusted partner in making the most of your financial endeavors. Join us in this journey to a brighter financial future!
+        </q>
+    </section> -->
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <p>
+                If you have any questions or need assistance, please feel free to contact us using the information below:
+            </p>
+            <p>
+                Address:<br>
+                Education City<br>
+                PO Box 24866<br>
+                Doha, Qatar
+            </p>
+            <p>Phone: (+974) 3063 6181</p>
+        </div>
+        
+        <!-- Add your contact information and a contact form if needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 QHedge - Your Financial Solution</p>
+    </footer>
+</body>
+</html>
