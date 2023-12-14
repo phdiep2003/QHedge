@@ -7,13 +7,13 @@
     <script src="asset/javascript/slider.js"></script>
     <link rel="stylesheet" href="asset/css/main.css">
     <link rel="stylesheet" href="asset/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" integrity="sha256-CKd7ot5hWu2lXg9hfPpk5FmF3Aa/6Yo9eIkdpufG0S8=" crossorigin="anonymous" />
     <link rel="shortcut icon" type="image/png" href="asset/media/tab Logo.png">
 </head>
 <body>
     <div class ="advertisement">
         <ul>
             <li><a href="realestate.html"> Elevate your wealth, increase asset for your family today: 2024-2028 Real Estate Project </a> </li>
-        </ul>
     </div>
     <header>
         <div class="header-left">
@@ -22,7 +22,6 @@
         <div class="header-center">
             <nav class="navbar">
                 <ul>
-                    <!-- <li><a class="active" href="#home">Home</a></li> -->
                     <li class = 'navbar-about'>
                         <a href="about-us.html">About Us</a>
                         <ul>
@@ -48,7 +47,7 @@
                             <li><a href="investor.html">Performance</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -150,13 +149,6 @@
           <button class="slide-button" onclick="nextSlide()">></button>
         </div>
       </div>
-
-    <section id="realestate">
-        <h2 class="message"> Are you on the lookout for a fund to elevate your family financial's future?</h2>        
-        <p>
-            Our 1st priority is to research on new investment vehicles to increase investors' capital. Recent market research indicates a substantial volatility in the real estate market and anticipated it to be the next financial phenomenon. In order to penetrate into the market, QHedge are expecting to invest a total of 500 million QAR, expecting a 35.5% return. Don't miss out and invest in QHedge now. Read more about the investment <a href="realestate.html">here</a>  . 
-        </p>
-    </section>
     <section id="contact">
         <h2>Contact Us</h2>
         <div class="contact">
@@ -170,17 +162,16 @@
                 Doha, Qatar
             </p>
             <p>Phone: (+974) 3063 6181</p>
+            <div class="schedule-meeting-button">
+                <button class="meeting-button" onclick="openModal()">Schedule a Meeting</button>
+            </div>  
         </div>
-        <div class="schedule-meeting-button">
-            <button class="meeting-button" onclick="openModal()">Schedule a Meeting</button>
-        </div>  
         
-        <!-- Add your contact information and a contact form if needed -->
     </section>
 
     <footer>
         <p>&copy; 2023 QHedge - Your Financial Solution</p>
         <p>Credit to Pixabay, The Pearl Island, WallpaperAcess for images. Credit to BlackRock, QInvest, Riyadh Capital for Website layout reference. Credit to BlackRock for Mission and Vision Reference.</p>
+
     </footer>
-</body>
-</html>
+    </html>

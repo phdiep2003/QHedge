@@ -9,6 +9,13 @@
         transform: translateX(100%); /* Move off the screen to the right */
     }
 }
+@media (max-width: 600px) {
+    iframe, object {
+      width: 100%;
+      height: 500px; 
+      padding: 20px;
+    }
+  }
 
 .advertisement {
     background-color: #e8e8e8; /* Set a background color */
@@ -267,7 +274,7 @@ nav a {
     position: relative;
     display:flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 1000;
 }
 .slider-container-new::before {
     content: "";
@@ -292,6 +299,29 @@ nav a {
 }
 
 .centertext{
-    text-align: center
+    text-align: center;
+    
+}
+.centertext button a{
+    text-decoration: none;
+    color:#000000;
+}
 
+.centertext button a:hover{
+    text-decoration: none;
+    color:#ffffff;
+    border-color: #FFFFFF;
+}
+
+.object {
+    width: 100%;
+    height: 800px; /* Adjust the height as needed */
+  }
+
+#home-block{
+    margin-top: -80px;
+}
+
+#centpls{
+    text-align: center;
 }

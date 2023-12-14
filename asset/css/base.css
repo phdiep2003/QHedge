@@ -9,8 +9,6 @@
     height: 400px;
     overflow: hidden;  
     font-size: 1.5em; 
-    /* border: 2px solid #ffffff;  */
-    /* border-radius: 8px; */
     position: relative;
 }
 
@@ -101,3 +99,50 @@
     font-size: 1.5em;
     line-height: 1.6; /* Adjust line height for readability */
 }
+
+.calendar {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .month {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .days {
+    display: flex;
+    background-color: #ecf0f1;
+    padding: 10px;
+  }
+  
+  .day {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .date {
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .date:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
